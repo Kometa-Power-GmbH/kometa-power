@@ -44,11 +44,19 @@ export default function Index({ setCursorIsActive }) {
             onMouseEnter={() => setCursorIsActive(true)}
             onMouseLeave={() => setCursorIsActive(false)}
           >
+            <Image
+              src="/images/logo-text.png"
+              alt="Logo"
+              width={130}
+              height={130}
+              className="object-contain"
+            />
             {/* <FaMeteor className="w-7 h-7" /> */}
-            <Image src="/images/logo.png" alt="Kometa Logo" width={28} height={28} className="w-12 h-12 bg-[#202020] border-2 border-[#FDEAA8] p-1 rounded-full" />
+            {/*
             <h2 className="manrope text-xl text-[#FDEAA8] font-bold cursor-pointer">
               Kometa Power
             </h2>
+            */}
           </Link>
 
           {/* Desktop Menu */}

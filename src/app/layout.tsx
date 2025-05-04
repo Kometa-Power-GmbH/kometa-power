@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kometa Power",
     description: "Kometa Power ist Ihr zuverlässiger Partner für Glasfaserverlegung, Tiefbau und technische Infrastruktur. Präzise. Effizient. Bereit für jedes Projekt.",
-    url: "https://kometa-power.de",
+    url: "https://kometa-power.com",
     type: "website",
     images: [
       {
         url: "/images/logo.png",
         width: 1200,
         height: 675,
-        alt: "https://kometa-power.de",
+        alt: "https://kometa-power.com",
       },
     ],
   },
