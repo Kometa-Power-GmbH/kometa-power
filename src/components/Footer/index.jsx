@@ -36,7 +36,7 @@ export default function Index({ setCursorIsActive }) {
             />
             {/* <FaMeteor className="min-w-fit w-5 h-5 md:w-7 md:h-7" /> */}
             <h3 className="text-xl text-[#FDEAA8] font-black cursor-pointer">
-              Kometa
+              Kometa Power GmbH
             </h3>
           </Link>
           <p className="mt-3.5">
