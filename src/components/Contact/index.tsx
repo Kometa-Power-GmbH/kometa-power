@@ -66,7 +66,7 @@ export default function ContactForm() {
           </div>
           <div className="flex items-center gap-3 mb-3 text-xl font-medium">
             <FaEnvelope color="#FDEAA8" className="text-[#202020] w-5 h-5" />
-            kontakt@kometa-energie.de
+            kometa-power@gmx.de
           </div>
           <div className="flex items-center gap-3 text-xl font-medium">
             <FaMapMarkerAlt

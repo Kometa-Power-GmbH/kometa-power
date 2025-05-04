@@ -22,7 +22,7 @@ export default function Impressum() {
           <p><strong>Kometa Power GmbH</strong></p>
           <p>Heiligenseestraße 36A<br />13503 Berlin</p>
           <p><strong>Vertreten durch:</strong><br />Mihai Savciuc (Geschäftsführer)</p>
-          <p><strong>Kontakt:</strong><br />Telefon: +49 176 707 00 689<br />E-Mail:</p>
+          <p><strong>Kontakt:</strong><br />Telefon: +49 176 707 00 689<br />E-Mail: kometa-power@gmx.de</p>
           <p><strong>Registereintrag:</strong><br />Eintragung im Handelsregister<br />Registergericht: Amtsgericht Charlottenburg (Berlin)<br />Registernummer: HRB 254779 B</p>
           <p><strong>Steuernummer:</strong><br />30/392/50716</p>
           <p><strong>Commerzbank GF-B48</strong><br />IBAN: DE26 1004 0048 0360 4618 00<br />BIC: COBADEFFXXX</p>

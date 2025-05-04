@@ -9,19 +9,19 @@ export const stats = [
     title: "100+",
     icon: <BsFillCheckCircleFill size={34} className="text-[#FDEAA8]" />,
     description:
-      "Erfolgreich abgeschlossene Projekte im Bereich Glasfaser, Tiefbau und Netzinfrastruktur.",
+      "Erfolgreich abgeschlossene Projekte im Bereich Glasfaser, Tiefbau und Netzinfrastruktur",
   },
   {
     title: "30+",
     icon: <BsFillPeopleFill size={34} className="text-[#FDEAA8]" />,
     description:
-      "Einsatzbereite Fachkräfte mit Erfahrung in der technischen Umsetzung vor Ort.",
+      "Einsatzbereite Fachkräfte mit Erfahrung in der technischen Umsetzung vor Ort",
   },
   {
     title: "12h",
     icon: <BsFillGearFill size={34} className="text-[#FDEAA8]" />,
     description:
-      "Durchschnittliche Reaktionszeit für neue Anfragen – flexibel und einsatzbereit.",
+      "Durchschnittliche Reaktionszeit für neue Anfragen – flexibel und einsatzbereit",
   },
 ];
 

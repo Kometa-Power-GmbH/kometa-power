@@ -41,7 +41,7 @@ export default function Datenschutz() {
             <br />
             Telefon: +49 176 707 00 689
             <br />
-            E-Mail: kontakt@kometa-energie.de
+            E-Mail: kometa-power@gmx.de
             <br />
             Vertreten durch: Mihai Savciuc (Geschäftsführer)
           </p>
@@ -133,7 +133,7 @@ export default function Datenschutz() {
             <br />
             13503 Berlin
             <br />
-            E-Mail: kontakt@kometa-energie.de
+            E-Mail: kometa-power@gmx.de
           </p>
         </div>
       </div>
