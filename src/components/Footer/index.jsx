@@ -68,8 +68,11 @@ export default function Index({ setCursorIsActive }) {
           </a>
         </div>
       </div>
-      <div className="mt-8 md:text-center px-6">
+      <div className="mt-20 text-center px-6 text-sm text-gray-400">
         <p>Copyright &copy; 2025 Kometa. All rights reserved.</p>
+        <p className="mt-2 text-[#FDEAA8]">
+          Energie, Präzision und technische Power – dafür stehen wir.
+        </p>
       </div>
     </footer>
   );

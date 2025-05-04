@@ -49,9 +49,7 @@ export default function Testimonials() {
                 <h3 className="text-lg font-semibold text-secondary">
                   {testimonial.name}
                 </h3>
-                <p className="text-sm font-semibold">
-                  {testimonial.role}
-                </p>
+                <p className="text-sm font-semibold">{testimonial.role}</p>
               </div>
             </div>
             <p className="text-center lg:text-left">

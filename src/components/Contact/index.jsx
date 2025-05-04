@@ -5,7 +5,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 export default function ContactForm() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8" id="contact">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-16">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:gap-16 gap-10">
         {/* Левая колонка — заголовок и текст */}
         <div className="lg:w-1/2 flex flex-col justify-start">
           <h2 className="text-4xl lg:text-5xl font-extrabold text-[#FDEAA8] font-heading mb-6">

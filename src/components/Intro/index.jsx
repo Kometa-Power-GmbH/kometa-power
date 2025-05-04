@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import Background from "../../../public/images/intro.jpg";
 import { FaWhatsapp } from "react-icons/fa";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";

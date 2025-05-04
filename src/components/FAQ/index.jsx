@@ -40,7 +40,10 @@ export default function Index() {
     <section className="py-20">
       <div className="flex flex-col lg:flex-row lg:gap-20 gap-10">
         <div className="">
-          <h2 id="faq" className="font-bold text-[#FDEAA8] text-center lg:text-left text-4xl">
+          <h2
+            id="faq"
+            className="font-bold text-[#FDEAA8] text-center lg:text-left text-4xl"
+          >
             FAQ&apos;S
           </h2>
           <h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left">
@@ -51,7 +54,7 @@ export default function Index() {
           </p>
           <a
             href="mailto:"
-            className="mt-3 block text-lg lg:text-2xl text-secondary font-semibold hover:underline text-center lg:text-left"
+            className="mt-3 block text-lg lg:text-2xl font-semibold hover:underline text-center lg:text-left"
           >
             info@kometa.de
           </a>
@@ -68,9 +71,9 @@ export default function Index() {
                         {faq.question}
                       </span>
                       {open ? (
-                        <BiMinus className="w-5 h-5 text-secondary" />
+                        <BiMinus className="w-5 h-5" />
                       ) : (
-                        <BiPlus className="w-5 h-5 text-secondary" />
+                        <BiPlus className="w-5 h-5" />
                       )}
                     </DisclosureButton>
 
@@ -83,7 +86,7 @@ export default function Index() {
                       leaveFrom="opacity-100 max-h-[500px]"
                       leaveTo="opacity-0 max-h-0"
                     >
-                      <DisclosurePanel className="px-4 pt-4 pb-2 text-foreground-accent">
+                      <DisclosurePanel className="px-4 pt-4 pb-2">
                         {faq.answer}
                       </DisclosurePanel>
                     </Transition>
