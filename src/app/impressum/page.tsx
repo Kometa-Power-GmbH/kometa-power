@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Impressum() {
   return (
-    <div className="relative min-h-screen text-black overflow-hidden">
+    <div className="relative min-h-screen text-black overflow-hidden scroll-smooth">
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/intro.jpg"
@@ -17,8 +17,8 @@ export default function Impressum() {
       </div>
 
       <div className="relative max-w-3xl mx-auto text-white bg-[#202020] p-8 md:p-12 shadow-2xl rounded-xl">
-        <h2 className="text-4xl font-black mb-6 text-[#FDEAA8]">Impressum</h2>
-        <div className="space-y-4 text-sm font-semibold md:text-base leading-relaxed">
+        <h2 className="lg:text-4xl text-2xl  font-black mb-6 text-[#FDEAA8]">Impressum</h2>
+        <div className="space-y-4 text-sm md:text-base leading-relaxed">
           <p><strong>Kometa Power GmbH</strong></p>
           <p>Heiligenseestraße 36A<br />13503 Berlin</p>
           <p><strong>Vertreten durch:</strong><br />Mihai Savciuc (Geschäftsführer)</p>

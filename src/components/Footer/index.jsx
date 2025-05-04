@@ -21,7 +21,10 @@ export default function Index({ setCursorIsActive }) {
   return (
     <footer className="bg-[#151515] py-10">
       <div className="font-semibold max-w-7xl w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-28">
-        <div>
+        <div
+          onMouseEnter={() => setCursorIsActive(true)}
+          onMouseLeave={() => setCursorIsActive(false)}
+        >
           <Link href="/" className="flex items-center gap-2">
             <FaMeteor className="min-w-fit w-5 h-5 md:w-7 md:h-7" />
             <h3 className="text-xl text-[#FDEAA8] font-black cursor-pointer">
@@ -34,11 +37,19 @@ export default function Index({ setCursorIsActive }) {
           </p>
         </div>
         <div>
-          <h4 className="text-lg mb-4 font-black text-[#FDEAA8]">Wichtige Links</h4>
+          <h4 className="text-lg mb-4 font-black text-[#FDEAA8]">
+            Wichtige Links
+          </h4>
           <ul>
             {quickLinks.map((link) => (
-              <li key={link.text} className="mb-2 transition-colors duration-300 ease-in-out">
-                <Link href={link.url} className="hover:text-[#FDEAA8] transition duration-500">
+              <li
+                key={link.text}
+                className="mb-2 transition-colors duration-300 ease-in-out"
+              >
+                <Link
+                  href={link.url}
+                  className="hover:text-[#FDEAA8] transition duration-500"
+                >
                   {link.text}
                 </Link>
               </li>
@@ -46,26 +57,19 @@ export default function Index({ setCursorIsActive }) {
           </ul>
         </div>
         <div>
-          <h4 className="text-lg font-black text-[#FDEAA8] mb-4">Kontaktieren Sie uns</h4>
+          <h4 className="text-lg font-black text-[#FDEAA8] mb-4">
+            Kontaktieren Sie uns
+          </h4>
           <a
             href={`mailto:kometa@gmail.com`}
             className="block hover:text-[#FDEAA8] mb-2 transition duration-500"
           >
             kometa@gmail.com
           </a>
-          <a
-            href={`tel:017234567459`}
-            className="block hover:text-[#FDEAA8] transition duration-500"
-          >
-            +49 172 345 67 459
-          </a>
         </div>
       </div>
       <div className="mt-8 md:text-center px-6">
-        <p>
-          Copyright &copy; 2025 Kometa.
-          All rights reserved.
-        </p>
+        <p>Copyright &copy; 2025 Kometa. All rights reserved.</p>
       </div>
     </footer>
   );
