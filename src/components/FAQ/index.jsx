@@ -38,9 +38,9 @@ export const faqs = [
 export default function Index() {
   return (
     <section id="faq" className="py-10 lg:py-20">
-      <div className="flex flex-col lg:flex-row gap-10">
+      <div className="flex flex-col lg:flex-row gap-20">
         <div className="">
-          <h2 className="hidden lg:block font-bold text-[#ec4e39] text-4xl">
+          <h2 className="hidden lg:block font-bold text-[#FDEAA8] text-4xl">
             FAQ&apos;S
           </h2>
           <h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left">

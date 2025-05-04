@@ -7,8 +7,9 @@ import Intro from "@/components/Intro";
 import Container from "@/components/Container";
 import About from "@/components/About";
 import Benefits from "@/components/Benefits/Benefits";
-import Blog from "@/components/Blog";
 import Stats from "@/components/Stats";
+import Blog from "@/components/Blog";
+import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -44,6 +45,7 @@ export default function Home() {
         <Benefits />
         <Stats setCursorIsActive={setCursorIsActive} />
         <Blog setCursorIsActive={setCursorIsActive} />
+        <Testimonials />
         <FAQ />
         <Contact />
       </Container>

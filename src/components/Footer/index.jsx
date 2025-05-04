@@ -24,7 +24,7 @@ export default function Index({ setCursorIsActive }) {
         <div>
           <Link href="/" className="flex items-center gap-2">
             <FaMeteor className="min-w-fit w-5 h-5 md:w-7 md:h-7" />
-            <h3 className="text-xl text-[#ec4e39] font-black cursor-pointer">
+            <h3 className="text-xl text-[#FDEAA8] font-black cursor-pointer">
               Kometa
             </h3>
           </Link>
@@ -34,11 +34,11 @@ export default function Index({ setCursorIsActive }) {
           </p>
         </div>
         <div>
-          <h4 className="text-lg mb-4 font-black text-[#ec4e39]">Wichtige Links</h4>
+          <h4 className="text-lg mb-4 font-black text-[#FDEAA8]">Wichtige Links</h4>
           <ul>
             {quickLinks.map((link) => (
               <li key={link.text} className="mb-2 transition-colors duration-300 ease-in-out">
-                <Link href={link.url} className="hover:text-[#ec4e39]">
+                <Link href={link.url} className="hover:text-[#FDEAA8] transition duration-500">
                   {link.text}
                 </Link>
               </li>
@@ -46,18 +46,18 @@ export default function Index({ setCursorIsActive }) {
           </ul>
         </div>
         <div>
-          <h4 className="text-lg font-black text-[#ec4e39] mb-4">Kontaktieren Sie uns</h4>
+          <h4 className="text-lg font-black text-[#FDEAA8] mb-4">Kontaktieren Sie uns</h4>
           <a
             href={`mailto:kometa@gmail.com`}
-            className="block hover:text-[#ec4e39] mb-2"
+            className="block hover:text-[#FDEAA8] mb-2 transition duration-500"
           >
-            Email: kometa@gmail.com
+            kometa@gmail.com
           </a>
           <a
             href={`tel:017234567459`}
-            className="block hover:text-[#ec4e39]"
+            className="block hover:text-[#FDEAA8] transition duration-500"
           >
-            Phone: 017234567459
+            +49 172 345 67 459
           </a>
         </div>
       </div>

@@ -40,7 +40,7 @@ export default function Index({ setCursorIsActive }) {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <FaMeteor className="w-7 h-7" />
-            <h2 className="manrope text-2xl text-[#ec4e39] font-bold cursor-pointer">
+            <h2 className="manrope text-2xl text-[#FDEAA8] font-bold cursor-pointer">
               Kometa
             </h2>
           </Link>
@@ -51,7 +51,7 @@ export default function Index({ setCursorIsActive }) {
               <li key={item.text}>
                 <Link
                   href={item.url}
-                  className="hover:text-[#ec4e39] transition-colors duration-300 ease-in-out"
+                  className="hover:text-[#FDEAA8] transition-colors duration-300 ease-in-out"
                 >
                   {item.text}
                 </Link>

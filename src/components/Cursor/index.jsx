@@ -49,7 +49,7 @@ export default function index({ isActive }) {
   return (
     <div
       style={{
-        backgroundColor: "#ec4e39",
+        backgroundColor: "#FDEAA8",
         width: size,
         height: size,
         opacity: 0.9,

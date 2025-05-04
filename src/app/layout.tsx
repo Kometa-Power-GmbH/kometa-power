@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Orbitron, Roboto } from "next/font/google";
+import { Montserrat, Roboto } from "next/font/google";
 import "./globals.css";
 
-const orbitron = Orbitron({
-  variable: "--font-orbitron",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800'],
 });
@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body className={`${orbitron.variable} ${roboto.variable} antialiased`}>
+      <body className={`${montserrat.variable} ${roboto.variable} antialiased`}>
         {children}
       </body>
     </html>

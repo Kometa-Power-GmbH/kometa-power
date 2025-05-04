@@ -51,7 +51,7 @@ export default function Index({ setCursorIsActive }) {
                   fill
                   style={{
                     objectFit: "cover",
-                    filter: "grayscale(100%) brightness(0.7)",
+                    filter: "brightness(0.7)"
                   }}
                 />
               </div>
@@ -59,7 +59,7 @@ export default function Index({ setCursorIsActive }) {
           ))}
         </Swiper>
         <a
-          className="inline-flex items-center text-xl gap-2 px-6 py-3 border border-[#b7ab98] text-[#b7ab98] font-semibold rounded-full hover:bg-[#ec4e39] hover:border-[#ec4e39] hover:text-white transition"
+          className="inline-flex items-center text-xl gap-2 px-6 py-3 border-2 font-semibold rounded-full hover:bg-[#FDEAA8] hover:border-[#FDEAA8] hover:text-black transition duration-1000"
           href="https://www.instagram.com"
           target="_blank"
           rel="noopener noreferrer"

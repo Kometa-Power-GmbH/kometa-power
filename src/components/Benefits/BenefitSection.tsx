@@ -67,7 +67,7 @@ export default function Index({ benefit, imageAtRight }: Props) {
                             className="flex flex-col w-full"
                             variants={childVariants}
                         >
-                            <h3 className="text-4xl font-bold text-[#ec4e39]">
+                            <h3 className="text-4xl font-bold text-[#FDEAA8]">
                                 {title}
                             </h3>
 
