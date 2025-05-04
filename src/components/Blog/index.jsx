@@ -18,7 +18,7 @@ const images = [
 export default function Index({ setCursorIsActive }) {
   return (
     <div id="blog" className="w-full p-0">
-      <div className="lg:py-20 py-10 flex flex-col items-center justify-center">
+      <div className="lg:py-20 py-20 flex flex-col items-center text-center justify-center">
         <div>
           <h1
             onMouseEnter={() => setCursorIsActive(true)}
@@ -40,7 +40,7 @@ export default function Index({ setCursorIsActive }) {
           spaceBetween={0}
           slidesPerView={1}
           loop={true}
-          className="w-full mb-9"
+          className="w-full mb-9 rounded-2xl"
         >
           {images.map((src, index) => (
             <SwiperSlide key={index}>

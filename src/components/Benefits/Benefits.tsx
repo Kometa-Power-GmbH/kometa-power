@@ -84,7 +84,7 @@ const benefits = [
 
 export default function Index() {
     return (
-        <div id="features" className="">
+        <div id="benefits" className="">
             <h2 className="sr-only">Features</h2>
             {benefits.map((item, index) => {
                 return <BenefitSection key={index} benefit={item} imageAtRight={index % 2 !== 0} />

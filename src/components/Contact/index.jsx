@@ -7,25 +7,30 @@ export default function ContactForm() {
     <section className="py-16 px-4 sm:px-6 lg:px-8" id="contact">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-16">
         {/* Левая колонка — заголовок и текст */}
-        <div className="lg:w-1/2 text-center lg:text-left">
-          <h2 className="text-5xl font-extrabold text-[#FDEAA8] uppercase">
-            Kontaktieren Sie uns
+        <div className="lg:w-1/2 flex flex-col justify-start">
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-[#FDEAA8] font-heading mb-6">
+            Lassen Sie uns gemeinsam durchstarten
           </h2>
-          <p className="my-6 text-xl font-semibold">
-            Sie haben Fragen oder ein Projekt? Schreiben Sie uns direkt über das
-            Formular. Wir melden uns schnellstmöglich bei Ihnen.
+          <p className="mb-6 text-xl leading-relaxed">
+            Rufen Sie uns an oder senden Sie uns eine E-Mail. Wir melden uns
+            schnellstmöglich zurück und beraten Sie persönlich und kompetent
+            rund um Ihr Projekt
           </p>
+
           <div className="flex items-center gap-3 mb-3 text-xl font-medium">
             <FaPhone color="#FDEAA8" className="text-[#202020] w-5 h-5" />
-            +49 15679 624045
+            +49 176 707 00 689
           </div>
           <div className="flex items-center gap-3 mb-3 text-xl font-medium">
             <FaEnvelope color="#FDEAA8" className="text-[#202020] w-5 h-5" />
-            info@flex-sharing.de
+            kontakt@kometa-energie.de
           </div>
           <div className="flex items-center gap-3 text-xl font-medium">
-            <FaMapMarkerAlt color="#FDEAA8" className="text-[#202020] w-5 h-5" />
-            Brunsbütteler Damm 112, 13581, Berlin
+            <FaMapMarkerAlt
+              color="#FDEAA8"
+              className="text-[#202020] w-5 h-5"
+            />
+            Heiligenseestraße 36A, 13503 Berlin
           </div>
         </div>
 

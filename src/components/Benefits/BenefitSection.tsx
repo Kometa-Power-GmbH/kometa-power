@@ -59,7 +59,7 @@ export default function Index({ benefit, imageAtRight }: Props) {
                 viewport={{ once: true }}
             >
                 <div
-                    className={clsx("flex flex-wrap items-center w-full max-w-lg", { "justify-start": imageAtRight, "lg:order-1 justify-end": !imageAtRight })}
+                    className={clsx("flex flex-wrap items-center w-full max-w-lg px-6 lg:px-0", { "justify-start": imageAtRight, "lg:order-1 justify-end": !imageAtRight })}
 
                 >
                     <div className="w-full text-center lg:text-left ">
@@ -84,7 +84,7 @@ export default function Index({ benefit, imageAtRight }: Props) {
                     </div>
                 </div>
 
-                <div className={clsx("mt-5 lg:mt-0", { "lg:order-2": imageAtRight })}>
+                <div className={clsx("mt-10 lg:mt-0", { "lg:order-2": imageAtRight })}>
                     <div className={clsx("w-fit flex", { "justify-start": imageAtRight, "justify-end": !imageAtRight })}>
                         <Image src={imageSrc} alt="title" width="384" height="762" quality={100} className="lg:ml-0 rounded-4xl" />
                     </div>

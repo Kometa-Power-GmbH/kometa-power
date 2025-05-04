@@ -20,7 +20,7 @@ const quickLinks = [
 export default function Index({ setCursorIsActive }) {
   return (
     <footer className="bg-[#151515] py-10">
-      <div className="font-semibold max-w-7xl w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-28">
+      <div className="font-semibold max-w-7xl w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-3 lg:gap-28 gap-10">
         <div
           onMouseEnter={() => setCursorIsActive(true)}
           onMouseLeave={() => setCursorIsActive(false)}
