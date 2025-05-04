@@ -4,8 +4,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { HiOutlineXMark, HiBars3 } from "react-icons/hi2";
-import { FaMeteor } from "react-icons/fa";
 import Container from "@/components/Container";
+import Image from "next/image";
 
 const menuItems = [
   {
@@ -44,9 +44,10 @@ export default function Index({ setCursorIsActive }) {
             onMouseEnter={() => setCursorIsActive(true)}
             onMouseLeave={() => setCursorIsActive(false)}
           >
-            <FaMeteor className="w-7 h-7" />
-            <h2 className="manrope text-2xl text-[#FDEAA8] font-bold cursor-pointer">
-              Kometa
+            {/* <FaMeteor className="w-7 h-7" /> */}
+            <Image src="/images/logo.png" alt="Kometa Logo" width={28} height={28} className="w-12 h-12 bg-[#202020] border-2 border-[#FDEAA8] p-1 rounded-full" />
+            <h2 className="manrope text-xl text-[#FDEAA8] font-bold cursor-pointer">
+              Kometa Power
             </h2>
           </Link>
 

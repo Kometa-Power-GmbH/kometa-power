@@ -16,7 +16,7 @@ const benefits = [
   {
     title: "Technische Präzision",
     description:
-      "Wir liefern technische Lösungen mit Fokus auf Effizienz, Struktur und Sicherheit – vor Ort, unter Druck und mit System.",
+      "Wir liefern technische Lösungen mit Fokus auf Effizienz, Struktur und Sicherheit.",
     bullets: [
       {
         title: "Planung & Ausführung",
@@ -40,26 +40,26 @@ const benefits = [
     imageSrc: "/images/optic.png",
   },
   {
-    title: "Starke Subunterstützung",
+    title: "Zuverlässiger Partner für Auftraggeber",
     description:
-      "Als Subunternehmer liefern wir verlässliche Leistung – genau dort, wo sie gebraucht wird. Termintreu, flexibel, teamorientiert.",
+      "Als erfahrene Subunternehmer unterstützen wir Ihre Projekte flexibel und effizient",
     bullets: [
       {
-        title: "Erfahrene Fachkräfte",
+        title: "Fachkundige Teams",
         description:
-          "Eingespielte Teams mit Erfahrung in Tiefbau, Glasfaser und Dokumentation.",
+          "Unsere eingespielten Kolonnen bringen Erfahrung im Glasfaserausbau, Tiefbau und der Baudokumentation mit.",
         icon: <FiUsers size={26} />,
       },
       {
-        title: "Pünktliche Umsetzung",
+        title: "Verlässliche Termine",
         description:
-          "Termine sind für uns kein Wunsch – sie sind Verpflichtung.",
+          "Wir halten Deadlines ein – verbindlich, transparent und mit hoher Eigenverantwortung.",
         icon: <FiClock size={26} />,
       },
       {
-        title: "Logistik & Mobilität",
+        title: "Eigene Logistik & Technik",
         description:
-          "Schnelle Einsatzbereitschaft durch eigene Fahrzeuge und Ausrüstung.",
+          "Durch unseren Fuhrpark und eigene Ausrüstung sind wir schnell und unabhängig einsatzbereit.",
         icon: <FiTruck size={26} />,
       },
     ],

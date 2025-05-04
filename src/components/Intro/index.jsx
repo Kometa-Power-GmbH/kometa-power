@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
@@ -31,6 +32,7 @@ export default function Index({ setCursorIsActive }) {
         style={isLargeScreen ? { y, willChange: "transform" } : {}}
         className="relative h-full w-full"
       >
+        {/* 
         <video
           src="/videos/intro.mp4"
           className="absolute inset-0 w-full h-full object-cover"
@@ -40,6 +42,17 @@ export default function Index({ setCursorIsActive }) {
           playsInline
         />
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/70 to-black/30 pointer-events-none" />
+        */}
+        <Image
+          src="/images/background.jpg"
+          fill
+          alt="image"
+          style={{
+            objectFit: "cover",
+            filter: "grayscale(100%) brightness(0.3)",
+          }}
+        />
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/60 to-black/10 pointer-events-none" />
       </motion.div>
       <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
         <motion.div
