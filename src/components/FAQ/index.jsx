@@ -53,10 +53,10 @@ export default function Index() {
             Stellen Sie uns Ihre Fragen
           </p>
           <a
-            href="mailto:kometa-power@gmx.de"
+            href="mailto:info@kometa-power.com"
             className="mt-3 block text-lg lg:text-2xl font-semibold hover:underline text-center lg:text-left"
           >
-            kometa-power@gmx.de
+            info@kometa-power.com
           </a>
         </div>
 

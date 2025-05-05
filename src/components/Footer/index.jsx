@@ -69,10 +69,10 @@ export default function Index({ setCursorIsActive }) {
             Kontaktieren Sie uns
           </h4>
           <a
-            href={`mailto:kometa-power@gmx.de`}
+            href={`mailto:info@kometa-power.com`}
             className="block hover:text-[#FDEAA8] mb-2 transition duration-500"
           >
-            kometa-power@gmx.de
+            info@kometa-power.com
           </a>
         </div>
       </div>
