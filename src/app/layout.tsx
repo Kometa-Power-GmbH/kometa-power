@@ -17,6 +17,9 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Kometa Power",
   description: "Kometa Power ist Ihr zuverlässiger Partner für Glasfaserverlegung, Tiefbau und technische Infrastruktur. Präzise. Effizient. Bereit für jedes Projekt.",
+  icons: {
+    icon: "/images/logo.png",
+  },
   openGraph: {
     title: "Kometa Power",
     description: "Kometa Power ist Ihr zuverlässiger Partner für Glasfaserverlegung, Tiefbau und technische Infrastruktur. Präzise. Effizient. Bereit für jedes Projekt.",
