@@ -77,11 +77,16 @@ export default function Index({ setCursorIsActive }) {
       </div>
       <div className="mt-20 text-center px-6 text-sm text-gray-400">
         <p>Copyright &copy; 2025 Kometa. All rights reserved.</p>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center mt-1">
           <p className="mr-0.5">Designed & Developed by</p>
-          <Image src="/images/mirka.png" alt="Mirka logo" width={80} height={80} />
+          <Image
+            src="/images/mirka.png"
+            alt="Mirka logo"
+            width={60}
+            height={60}
+          />
         </div>
-        <p className="mt-2 text-[#FDEAA8]">
+        <p className="mt-1 text-[#FDEAA8]">
           Energie, Präzision und technische Power – dafür stehen wir.
         </p>
       </div>
