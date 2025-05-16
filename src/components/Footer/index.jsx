@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { FaMeteor } from "react-icons/fa";
 import Image from "next/image";
 
 const quickLinks = [
@@ -78,6 +77,10 @@ export default function Index({ setCursorIsActive }) {
       </div>
       <div className="mt-20 text-center px-6 text-sm text-gray-400">
         <p>Copyright &copy; 2025 Kometa. All rights reserved.</p>
+        <div className="flex items-center justify-center">
+          <p className="mr-0.5">Designed & Developed by</p>
+          <Image src="/images/mirka.png" alt="Mirka logo" width={80} height={80} />
+        </div>
         <p className="mt-2 text-[#FDEAA8]">
           Energie, Präzision und technische Power – dafür stehen wir.
         </p>
