@@ -37,7 +37,7 @@ const benefits = [
         icon: <FiSettings size={26} />,
       },
     ],
-    imageSrc: "/images/optic.png",
+    imageSrc: "/images/1.png",
   },
   {
     title: "Zuverlässiger Partner für Auftraggeber",
@@ -63,7 +63,7 @@ const benefits = [
         icon: <FiTruck size={26} />,
       },
     ],
-    imageSrc: "/images/support.png",
+    imageSrc: "/images/2.png",
   },
   {
     title: "Sicherheit & Qualität",
@@ -89,7 +89,7 @@ const benefits = [
         icon: <FiTarget size={26} />,
       },
     ],
-    imageSrc: "/images/safety.png",
+    imageSrc: "/images/3.png",
   },
 ];
 

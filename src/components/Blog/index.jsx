@@ -9,10 +9,12 @@ import "./style.css";
 import { FaInstagram } from "react-icons/fa";
 
 const images = [
-  "/images/blog/1.jpg",
-  "/images/blog/2.jpg",
-  "/images/blog/3.jpg",
-  "/images/blog/4.jpg",
+  "/images/blog/1.jpeg",
+  "/images/blog/2.jpeg",
+  "/images/blog/3.jpeg",
+  "/images/blog/4.jpeg",
+  "/images/blog/5.jpeg",
+  "/images/blog/6.jpeg"
 ];
 
 export default function Index({ setCursorIsActive }) {
@@ -60,7 +62,7 @@ export default function Index({ setCursorIsActive }) {
         </Swiper>
         <a
           className="inline-flex items-center text-xl gap-2 px-6 py-3 border-2 font-semibold rounded-full hover:bg-[#FDEAA8] hover:border-[#FDEAA8] hover:text-black transition duration-1000"
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/kometapower.gmbh"
           target="_blank"
           rel="noopener noreferrer"
           onMouseEnter={() => setCursorIsActive(true)}

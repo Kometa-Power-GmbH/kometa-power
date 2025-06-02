@@ -53,12 +53,12 @@ export default function Index({ setCursorIsActive }) {
                 key={link.text}
                 className="mb-2 transition-colors duration-300 ease-in-out"
               >
-                <Link
+                <a
                   href={link.url}
                   className="hover:text-[#FDEAA8] transition duration-500"
                 >
                   {link.text}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
@@ -76,9 +76,9 @@ export default function Index({ setCursorIsActive }) {
         </div>
       </div>
       <div className="mt-20 text-center px-6 text-sm text-gray-400">
-        <p>Copyright &copy; 2025 Kometa. All rights reserved.</p>
+        <p className="font-medium">Copyright &copy; 2025 Kometa. All rights reserved.</p>
         <div className="flex items-center justify-center mt-1">
-          <p className="mr-0.5">Designed & Developed by</p>
+          <p className="mr-0.5 font-medium">Designed & Developed by</p>
           <Image
             src="/images/mirka.png"
             alt="Mirka logo"
@@ -86,7 +86,7 @@ export default function Index({ setCursorIsActive }) {
             height={60}
           />
         </div>
-        <p className="mt-1 text-[#FDEAA8]">
+        <p className="mt-1 text-[#FDEAA8] font-semibold">
           Energie, Präzision und technische Power – dafür stehen wir.
         </p>
       </div>
