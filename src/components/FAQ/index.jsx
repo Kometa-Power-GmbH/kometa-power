@@ -37,11 +37,10 @@ export const faqs = [
 
 export default function Index() {
   return (
-    <section className="py-20">
+    <section id="faq" className="py-20">
       <div className="flex flex-col lg:flex-row lg:gap-20 gap-10">
         <div className="">
           <h2
-            id="faq"
             className="font-bold text-[#FDEAA8] text-center lg:text-left text-4xl"
           >
             FAQ&apos;S

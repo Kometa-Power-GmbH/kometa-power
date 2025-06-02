@@ -63,12 +63,12 @@ export default function Index({ setCursorIsActive }) {
           <ul className="hidden md:flex space-x-6 font-semibold text-lg">
             {menuItems.map((item) => (
               <li key={item.text}>
-                <Link
+                <a
                   href={item.url}
                   className="hover:text-[#FDEAA8] transition-colors duration-300 ease-in-out"
                 >
                   {item.text}
-                </Link>
+                </a>
               </li>
             ))}
             {/* 
