@@ -47,7 +47,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8" id="contact">
+    <section className="py-16 px-4 sm:px-6 lg:px-20 pb-36" id="contact">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:gap-16 gap-10">
         {/* Left */}
         <div className="lg:w-1/2 flex flex-col justify-start">

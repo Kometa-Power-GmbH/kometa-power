@@ -27,7 +27,7 @@ export const stats = [
 
 export default function Index({ setCursorIsActive }) {
   return (
-    <section id="stats" className="py-10 lg:py-20 px-6 lg:px-0">
+    <section id="stats" className="py-10 lg:py-20 px-6 lg:px-24">
       <div className="grid sm:grid-cols-3 gap-11">
         {stats.map((stat) => (
           <div

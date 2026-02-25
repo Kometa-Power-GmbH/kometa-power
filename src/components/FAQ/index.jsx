@@ -2,8 +2,7 @@
 import {
   Disclosure,
   DisclosureButton,
-  DisclosurePanel,
-  Transition,
+  DisclosurePanel
 } from "@headlessui/react";
 import { BiMinus, BiPlus } from "react-icons/bi";
 
@@ -37,12 +36,10 @@ export const faqs = [
 
 export default function Index() {
   return (
-    <section id="faq" className="py-20">
+    <section id="faq" className="py-20 px-2 lg:px-24">
       <div className="flex flex-col lg:flex-row lg:gap-20 gap-10">
-        <div className="">
-          <h2
-            className="font-bold text-[#FDEAA8] text-center lg:text-left text-4xl"
-          >
+        <div>
+          <h2 className="font-bold text-[#FDEAA8] text-center lg:text-left text-4xl">
             FAQ&apos;S
           </h2>
           <h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left">
@@ -76,19 +73,9 @@ export default function Index() {
                       )}
                     </DisclosureButton>
 
-                    <Transition
-                      show={open}
-                      enter="transition-all duration-500 ease-out"
-                      enterFrom="opacity-0 max-h-0"
-                      enterTo="opacity-100 max-h-[500px]"
-                      leave="transition-all duration-200 ease-in"
-                      leaveFrom="opacity-100 max-h-[500px]"
-                      leaveTo="opacity-0 max-h-0"
-                    >
-                      <DisclosurePanel className="px-4 pt-4 pb-2">
-                        {faq.answer}
-                      </DisclosurePanel>
-                    </Transition>
+                    <DisclosurePanel className="px-4 pt-4 pb-2">
+                      {faq.answer}
+                    </DisclosurePanel>
                   </div>
                 )}
               </Disclosure>
