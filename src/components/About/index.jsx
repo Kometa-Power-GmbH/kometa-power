@@ -2,7 +2,7 @@
 
 export default function Index() {
   return (
-    <section id="about" className="w-full lg:pt-30 pt-20 px-6 lg:px-24">
+    <section id="about" className="w-full lg:py-30 py-20 px-6 lg:px-24">
       <div className="max-w-5xl mx-auto">
         <h1 className="rounded-lg text-[#FDEAA8] text-4xl lg:text-5xl font-extrabold font-heading mb-12">
           Über uns

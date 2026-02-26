@@ -32,17 +32,6 @@ export default function Index({ setCursorIsActive }) {
         style={isLargeScreen ? { y, willChange: "transform" } : {}}
         className="relative h-full w-full"
       >
-        {/* 
-        <video
-          src="/videos/intro.mp4"
-          className="absolute inset-0 w-full h-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/70 to-black/30 pointer-events-none" />
-        */}
         <Image
           src="/images/background.jpg"
           fill

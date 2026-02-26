@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import Intro from "@/components/Intro";
 import Container from "@/components/Container";
 import About from "@/components/About";
+import Equipment from "@/components/Equipment";
 import Benefits from "@/components/Benefits/Benefits";
 import Stats from "@/components/Stats";
 import Blog from "@/components/Blog";
@@ -57,6 +58,7 @@ export default function Home() {
         <Stats setCursorIsActive={setCursorIsActive} />
         <Blog setCursorIsActive={setCursorIsActive} />
         <Testimonials />
+        <Equipment />
         <FAQ />
         <Contact />
       </Container>
