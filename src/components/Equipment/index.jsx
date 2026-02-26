@@ -34,7 +34,7 @@ const equipment = [
   {
     name: "Minibagger",
     quantity: "5 Einheiten",
-    image: "/images/equipment/minibagger.jpg",
+    image: "/images/equipment/mini.jpg",
   },
   {
     name: "Asphalt-Thermobox",
