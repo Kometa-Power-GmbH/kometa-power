@@ -35,11 +35,11 @@ export default function Datenschutz() {
             <br />
             Kometa Power GmbH
             <br />
-            Heiligenseestraße 36A
+            Hafenstraße 2
             <br />
-            13503 Berlin
+            16761 Hennigsdorf
             <br />
-            Telefon: +49 176 707 00 689
+            Telefon: +49 179 200 11 67
             <br />
             E-Mail: kometa-power@gmx.de
             <br />
@@ -129,9 +129,9 @@ export default function Datenschutz() {
             <br />
             Mihai Savciuc
             <br />
-            Heiligenseestraße 36A
+            Hafenstraße 2
             <br />
-            13503 Berlin
+            16761 Hennigsdorf
             <br />
             E-Mail: kometa-power@gmx.de
           </p>

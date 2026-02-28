@@ -62,7 +62,7 @@ export default function ContactForm() {
 
           <div className="flex items-center gap-3 mb-3 text-xl font-medium">
             <FaPhone color="#FDEAA8" className="text-[#202020] w-5 h-5" />
-            +49 176 707 00 689
+            +49 179 200 11 67
           </div>
           <div className="flex items-center gap-3 mb-3 text-xl font-medium">
             <FaEnvelope color="#FDEAA8" className="text-[#202020] w-5 h-5" />
@@ -73,7 +73,7 @@ export default function ContactForm() {
               color="#FDEAA8"
               className="text-[#202020] w-5 h-5"
             />
-            Heiligenseestraße 36A, 13503 Berlin
+            Hafenstraße 2, 16761 Hennigsdorf
           </div>
         </div>
 

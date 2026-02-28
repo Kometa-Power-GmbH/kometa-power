@@ -63,7 +63,7 @@ export default function Index({ setCursorIsActive }) {
               Kontaktieren Sie uns
             </a>
             <a
-              href="https://wa.me/4917670700689"
+              href="https://wa.me/491792001167"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3"

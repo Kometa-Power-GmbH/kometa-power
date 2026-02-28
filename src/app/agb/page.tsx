@@ -24,9 +24,9 @@ export default function AGB() {
           <p>
             <strong>Kometa Power GmbH</strong>
             <br />
-            Heiligenseestraße 36A
+            Hafenstraße 2
             <br />
-            13503 Berlin
+            16761 Hennigsdorf
           </p>
 
           <p>
