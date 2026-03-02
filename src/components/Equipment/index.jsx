@@ -7,60 +7,35 @@ import "swiper/css";
 
 const equipment = [
   {
-    name: "LKW MAN 12 t",
+    name: "LKW MAN",
     quantity: "4 Einheiten",
-    image: "/images/equipment/man-12.jpg",
-  },
-  {
-    name: "LKW MAN 7,5 t",
-    quantity: "4 Einheiten",
-    image: "/images/equipment/man-7-5.jpg",
-  },
-  {
-    name: "LKW DAF 40 t",
-    quantity: "3 Einheiten",
-    image: "/images/equipment/daf.jpg",
-  },
-  {
-    name: "Kipper 3,5 t",
-    quantity: "9 Fahrzeuge",
-    image: "/images/equipment/kipper.jpg",
-  },
-  {
-    name: "Radlader",
-    quantity: "4 Einheiten",
-    image: "/images/equipment/radlader.jpg",
-  },
-  {
-    name: "Minibagger",
-    quantity: "5 Einheiten",
-    image: "/images/equipment/mini.jpg",
-  },
-  {
-    name: "Asphalt-Thermobox",
-    quantity: "4 Einheiten",
-    image: "/images/equipment/thermobox.jpg",
-  },
-  {
-    name: "JCB Asphaltfertiger (2 t)",
-    quantity: "2 Einheiten",
-    image: "/images/equipment/asphaltfertiger.jpg",
-  },
-  {
-    name: "Rüttelplatten",
-    quantity: "mehrere Einheiten",
-    image: "/images/equipment/rüttelplatten.jpg",
-  },
-  {
-    name: "Asphalttrennsägen",
-    quantity: "5 Einheiten",
-    image: "/images/equipment/trennsägen.jpg",
+    image: "/images/equipment/man.png",
   },
   {
     name: "Kleinbusse und Dienstfahrzeuge",
     quantity: "14 Einheiten",
-    image: "/images/equipment/kleinbus.jpg",
+    image: "/images/equipment/bus.png",
   },
+  {
+    name: "Minibagger",
+    quantity: "5 Einheiten",
+    image: "/images/equipment/bagger.png",
+  },
+  {
+    name: "Radlader",
+    quantity: "4 Einheiten",
+    image: "/images/equipment/radlader.png",
+  },
+  {
+    name: "Kipper 3.5 t",
+    quantity: "9 Fahrzeuge",
+    image: "/images/equipment/kipper.png",
+  },
+  {
+    name: "LKW DAF 40 t",
+    quantity: "3 Einheiten",
+    image: "/images/equipment/daf.png",
+  }
 ];
 
 export default function Index() {
@@ -99,11 +74,11 @@ export default function Index() {
           {equipment.map((item, index) => (
             <SwiperSlide key={index} className="rounded-2xl">
               <div className="h-96 rounded-2xl w-full overflow-hidden bg-gradient-to-br from-[#111111] via-[#1a1a1a] to-[#0f0f0f] flex flex-col">
-                <div className="h-60 w-full bg-[#202020]">
+                <div className="h-72 w-full bg-[#202020]">
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-contain"
                     style={{
                       filter:
                         "sepia(30%) brightness(0.9) contrast(1.15) saturate(1.05)",
