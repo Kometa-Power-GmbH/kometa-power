@@ -39,7 +39,7 @@ export default function Datenschutz() {
             <br />
             16761 Hennigsdorf
             <br />
-            Telefon: +49 179 200 11 67
+            Telefon: +49 155 672 01 810
             <br />
             E-Mail: kometa-power@gmx.de
             <br />
