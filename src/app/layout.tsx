@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Montserrat, Roboto } from "next/font/google";
 import "./globals.css";
+import { ConsentProvider } from "@/components/Consent/ConsentProvider";
+import { CookieBanner } from "@/components/Consent/CookieBanner";
+import { AnalyticsGate, ConsentModeDefault } from "@/components/Analytics";
+import { getServerConsent } from "@/lib/consent/storage";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -42,15 +46,21 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const initialConsent = await getServerConsent();
   return (
     <html lang="de">
       <body className={`${montserrat.variable} ${roboto.variable} antialiased`}>
-        {children}
+        <ConsentModeDefault />
+        <ConsentProvider initialConsent={initialConsent}>
+          {children}
+          <CookieBanner />
+          <AnalyticsGate />
+        </ConsentProvider>
       </body>
     </html>
   );

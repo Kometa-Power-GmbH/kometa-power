@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import { ConsentLink } from "../Consent/ConsentLink";
 
 const quickLinks = [
   {
@@ -61,6 +62,9 @@ export default function Index({ setCursorIsActive }) {
                 </a>
               </li>
             ))}
+            <li className="mb-2 transition-colors duration-300 ease-in-out">
+              <ConsentLink />
+            </li>
           </ul>
         </div>
         <div>
