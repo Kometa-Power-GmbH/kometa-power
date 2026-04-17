@@ -18,14 +18,11 @@ const quickLinks = [
   },
 ];
 
-export default function Index({ setCursorIsActive }) {
+export default function Index() {
   return (
     <footer className="bg-[#151515] py-10">
       <div className="font-semibold max-w-7xl w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-3 lg:gap-28 gap-10">
-        <div
-          onMouseEnter={() => setCursorIsActive(true)}
-          onMouseLeave={() => setCursorIsActive(false)}
-        >
+        <div>
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/images/logo.png"

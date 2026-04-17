@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 
-export default function Index({ setCursorIsActive }) {
+export default function Index() {
   const container = useRef();
   const { scrollYProgress } = useScroll({
     target: container,
@@ -67,8 +67,6 @@ export default function Index({ setCursorIsActive }) {
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3"
-              onMouseEnter={() => setCursorIsActive(true)}
-              onMouseLeave={() => setCursorIsActive(false)}
             >
               <FaWhatsapp size={70} />
             </a>

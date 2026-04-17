@@ -17,14 +17,12 @@ const images = [
   "/images/blog/6.jpeg"
 ];
 
-export default function Index({ setCursorIsActive }) {
+export default function Index() {
   return (
     <div id="blog" className="w-full p-0">
       <div className="lg:py-20 py-20 lg:px-14 flex flex-col items-center text-center justify-center">
         <div>
           <h1
-            onMouseEnter={() => setCursorIsActive(true)}
-            onMouseLeave={() => setCursorIsActive(false)}
             className="text-4xl lg:text-5xl font-extrabold font-heading lg:mb-13 mb-10"
           >
             Aus unserem Alltag
@@ -65,8 +63,6 @@ export default function Index({ setCursorIsActive }) {
           href="https://www.instagram.com/kometapower.gmbh"
           target="_blank"
           rel="noopener noreferrer"
-          onMouseEnter={() => setCursorIsActive(true)}
-          onMouseLeave={() => setCursorIsActive(false)}
         >
           <FaInstagram className="text-xl" />
           Folgt uns auf Instagram

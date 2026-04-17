@@ -26,7 +26,7 @@ const menuItems = [
   },
 ];
 
-export default function Index({ setCursorIsActive }) {
+export default function Index() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -41,8 +41,6 @@ export default function Index({ setCursorIsActive }) {
           <Link
             href="/"
             className="flex items-center gap-2"
-            onMouseEnter={() => setCursorIsActive(true)}
-            onMouseLeave={() => setCursorIsActive(false)}
           >
             <Image
               src="/images/logo-text.png"
