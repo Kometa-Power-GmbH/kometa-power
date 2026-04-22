@@ -43,7 +43,7 @@ export default function Datenschutz() {
             <br />
             Telefon: +49 155 672 01 810
             <br />
-            E-Mail: kometa-power@gmx.de
+            E-Mail: info@kometa-power.com
             <br />
             Vertreten durch: Mihai Savciuc (Geschäftsführer)
           </p>
@@ -198,7 +198,7 @@ export default function Datenschutz() {
             <br />
             Sie haben das Recht auf Auskunft, Berichtigung, Löschung,
             Einschränkung, Datenübertragbarkeit, Widerruf und Beschwerde
-            gemäß DSGVO. Ansprechpartner: kometa-power@gmx.de
+            gemäß DSGVO. Ansprechpartner: info@kometa-power.com
           </p>
 
           <p>
@@ -228,7 +228,7 @@ export default function Datenschutz() {
             <br />
             16761 Hennigsdorf
             <br />
-            E-Mail: kometa-power@gmx.de
+            E-Mail: info@kometa-power.com
           </p>
         </div>
       </div>

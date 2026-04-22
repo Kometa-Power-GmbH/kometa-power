@@ -22,7 +22,7 @@ export default function Impressum() {
           <p><strong>Kometa Power GmbH</strong></p>
           <p>Hafenstraße 2<br />16761 Hennigsdorf</p>
           <p><strong>Vertreten durch:</strong><br />Mihai Savciuc (Geschäftsführer)</p>
-          <p><strong>Kontakt:</strong><br />Telefon: +49 155 672 01 810<br />E-Mail: kometa-power@gmx.de</p>
+          <p><strong>Kontakt:</strong><br />Telefon: +49 155 672 01 810<br />E-Mail: info@kometa-power.com</p>
           <p><strong>Registereintrag:</strong><br />Eintragung im Handelsregister<br />Registergericht: Amtsgericht Charlottenburg (Berlin)<br />Registernummer: HRB 254779 B</p>
           <p><strong>Steuernummer:</strong><br />30/392/50716</p>
           <p><strong>Commerzbank GF-B48</strong><br />IBAN: DE26 1004 0048 0360 4618 00<br />BIC: COBADEFFXXX</p>
