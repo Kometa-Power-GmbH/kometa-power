@@ -1,86 +1,59 @@
-import * as React from "react";
-
 interface EmailTemplateProps {
   name: string;
   email: string;
   message: string;
 }
 
-export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
+function escapeHtml(input: string): string {
+  return input
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+export function renderContactEmail({
   name,
   email,
   message,
-}) => (
-  <div
-    style={{
-      fontFamily: "Segoe UI, Roboto, sans-serif",
-      backgroundColor: "#0a0a0a",
-      padding: "48px 16px",
-      minHeight: "100vh",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-    }}
-  >
-    <div
-      style={{
-        backgroundColor: "#1a1a1a",
-        padding: "32px",
-        borderRadius: "16px",
-        maxWidth: "600px",
-        width: "100%",
-        color: "#FDEAA8",
-        boxShadow: "0 0 30px rgba(253, 234, 168, 0.1)",
-        border: "1px solid #333",
-      }}
-    >
-      <h1
-        style={{
-          fontSize: "24px",
-          marginBottom: "24px",
-          color: "#ffffff",
-        }}
-      >
-        📩 Neue Nachricht von{" "}
-        <span style={{ color: "#FDEAA8" }}>Kometa Power</span>
-      </h1>
+}: EmailTemplateProps): string {
+  const safeName = escapeHtml(name);
+  const safeEmail = escapeHtml(email);
+  const safeMessage = escapeHtml(message).replace(/\n/g, "<br />");
 
-      <div style={{ fontSize: "16px", marginBottom: "12px" }}>
-        <strong
-          style={{ width: "100px", display: "inline-block", color: "#ffffff" }}
-        >
-          👤 Name:
-        </strong>
-        {name}
-      </div>
-
-      <div style={{ fontSize: "16px", marginBottom: "12px" }}>
-        <strong
-          style={{ width: "100px", display: "inline-block", color: "#ffffff" }}
-        >
-          📧 E-Mail:
-        </strong>
-        {email}
-      </div>
-
-      <div>
-        <strong style={{ fontSize: "18px", color: "#ffffff" }}>
-          💬 Nachricht:
-        </strong>
-        <div
-          style={{
-            backgroundColor: "#0a0a0a",
-            padding: "16px",
-            marginTop: "12px",
-            borderRadius: "8px",
-            fontSize: "16px",
-            whiteSpace: "pre-line",
-            borderLeft: "4px solid #FDEAA8",
-          }}
-        >
-          {message}
-        </div>
-      </div>
-    </div>
-  </div>
-);
+  return `<!doctype html>
+<html lang="de">
+  <body style="margin:0;padding:0;background-color:#0a0a0a;font-family:'Segoe UI',Roboto,sans-serif;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#0a0a0a;padding:48px 16px;">
+      <tr>
+        <td align="center">
+          <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="background-color:#1a1a1a;border-radius:16px;border:1px solid #333;max-width:600px;width:100%;">
+            <tr>
+              <td style="padding:32px;color:#FDEAA8;">
+                <h1 style="font-size:24px;margin:0 0 24px;color:#ffffff;">
+                  Neue Nachricht von <span style="color:#FDEAA8;">Kometa Power</span>
+                </h1>
+                <p style="font-size:16px;margin:0 0 12px;color:#ffffff;">
+                  <strong style="display:inline-block;width:100px;">Name:</strong>
+                  <span style="color:#FDEAA8;">${safeName}</span>
+                </p>
+                <p style="font-size:16px;margin:0 0 12px;color:#ffffff;">
+                  <strong style="display:inline-block;width:100px;">E-Mail:</strong>
+                  <a href="mailto:${safeEmail}" style="color:#FDEAA8;text-decoration:none;">${safeEmail}</a>
+                </p>
+                <p style="font-size:18px;margin:24px 0 8px;color:#ffffff;">
+                  <strong>Nachricht:</strong>
+                </p>
+                <div style="background-color:#0a0a0a;padding:16px;border-radius:8px;font-size:16px;color:#FDEAA8;border-left:4px solid #FDEAA8;">
+                  ${safeMessage}
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>`;
+}

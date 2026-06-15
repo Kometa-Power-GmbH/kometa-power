@@ -1,49 +1,88 @@
-import { EmailTemplate } from "@/components/Templates/EmailTemplate";
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
+import { renderContactEmail } from "@/components/Templates/EmailTemplate";
+
+interface ContactPayload {
+  name?: unknown;
+  email?: unknown;
+  message?: unknown;
+}
+
+function isNonEmptyString(value: unknown): value is string {
+  return typeof value === "string" && value.trim().length > 0;
+}
 
 export async function POST(req: Request) {
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
-    console.error("[send] RESEND_API_KEY is missing");
+  const host = process.env.SMTP_HOST;
+  const port = Number(process.env.SMTP_PORT ?? 587);
+  const user = process.env.SMTP_USER;
+  const pass = process.env.SMTP_PASS;
+  const from = process.env.SMTP_FROM ?? user;
+  const to = process.env.MAIL_TO ?? "info@kometa-power.com";
+
+  if (!host || !user || !pass) {
+    console.error("[send] SMTP not configured (need SMTP_HOST, SMTP_USER, SMTP_PASS)");
     return NextResponse.json(
-      { error: "Email service not configured (missing RESEND_API_KEY)" },
+      { error: "Email service not configured" },
       { status: 500 },
     );
   }
 
+  let payload: ContactPayload;
   try {
-    const { name, email, message } = await req.json();
-    const resend = new Resend(apiKey);
+    payload = (await req.json()) as ContactPayload;
+  } catch {
+    return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
+  }
 
-    const { data, error } = await resend.emails.send({
-      from: '"Kometa Power" <onboarding@resend.dev>',
-      to: "info@kometa-power.com",
+  if (
+    !isNonEmptyString(payload.name) ||
+    !isNonEmptyString(payload.email) ||
+    !isNonEmptyString(payload.message)
+  ) {
+    return NextResponse.json({ error: "Missing fields" }, { status: 400 });
+  }
+
+  const { name, email, message } = payload;
+  const secure = port === 465;
+
+  const transporter = nodemailer.createTransport({
+    host,
+    port,
+    secure,
+    auth: { user, pass },
+  });
+
+  const html = renderContactEmail({ name, email, message });
+  const text =
+    `Neue Kontaktanfrage\n\n` +
+    `Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${message}\n`;
+
+  try {
+    const info = await transporter.sendMail({
+      from,
+      to,
       replyTo: email,
-      subject: "Neue Kontaktanfrage von Kometa Power",
-      react: EmailTemplate({ name, email, message }) as React.ReactElement,
+      subject: `Neue Kontaktanfrage von ${name}`,
+      text,
+      html,
     });
-
-    if (error) {
-      console.error("[send] Resend error:", error);
-      return NextResponse.json(
-        {
-          error: "Failed to send email",
-          details: {
-            name: error.name,
-            message: error.message,
-          },
-        },
-        { status: 500 },
-      );
-    }
-
-    return NextResponse.json({ data, message: "success" }, { status: 200 });
-  } catch (error) {
-    const err = error as Error;
-    console.error("[send] Unexpected error:", err);
     return NextResponse.json(
-      { error: "Failed to send email", details: { message: err.message } },
+      { message: "success", id: info.messageId },
+      { status: 200 },
+    );
+  } catch (error) {
+    const err = error as Error & { code?: string; response?: string };
+    console.error("[send] SMTP error:", err);
+    return NextResponse.json(
+      {
+        error: "Failed to send email",
+        details: {
+          message: err.message,
+          code: err.code,
+          response: err.response,
+        },
+      },
       { status: 500 },
     );
   }
