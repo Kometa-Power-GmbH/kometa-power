@@ -2,6 +2,9 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { renderContactEmail } from "@/components/Templates/EmailTemplate";
 
+export const runtime = "nodejs";
+export const maxDuration = 30;
+
 interface ContactPayload {
   name?: unknown;
   email?: unknown;
@@ -51,6 +54,9 @@ export async function POST(req: Request) {
     port,
     secure,
     auth: { user, pass },
+    connectionTimeout: 15_000,
+    greetingTimeout: 15_000,
+    socketTimeout: 20_000,
   });
 
   const html = renderContactEmail({ name, email, message });
